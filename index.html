@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Life — Главная</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>My Life</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html" class="active">Главная</a></li>
+        <li><a href="interests.html">Мои интересы</a></li>
+        <li><a href="recommendations.html">Рекомендации</a></li>
+        <li><a href="places.html">Места и впечатления</a></li>
+        <li><a href="favorite.html">Фаворит</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Привет! Это My Life</h2>
+      <p>Мой личный блог об играх, музыке, спорте и животных. Здесь я делюсь тем, что меня вдохновляет.</p>
+    </section>
+
+    <section class="cards">
+      <h2>О чём этот блог</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Игры</h3>
+          <p>Обзоры, любимые жанры и игровые находки.</p>
+        </article>
+        <article class="card">
+          <h3>Музыка</h3>
+          <p>Плейлисты, альбомы и артисты, которые со мной каждый день.</p>
+        </article>
+        <article class="card">
+          <h3>Спорт</h3>
+          <p>Тренировки, матчи и события, которые заряжают энергией.</p>
+        </article>
+        <article class="card">
+          <h3>Животные</h3>
+          <p>Питомцы, наблюдения и всё о братьях меньших.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="slider-section">
+      <h2>Фотогалерея</h2>
+      <div class="slider">
+        <div class="slides">
+          <img src="images/slide1.jpg" alt="Слайд 1" class="slide active">
+          <img src="images/slide2.jpg" alt="Слайд 2" class="slide">
+          <img src="images/slide3.jpg" alt="Слайд 3" class="slide">
+        </div>
+        <button class="slider-btn prev" onclick="prevSlide()">&#10094;</button>
+        <button class="slider-btn next" onclick="nextSlide()">&#10095;</button>
+        <div class="slider-dots">
+          <span class="dot active" onclick="goToSlide(0)"></span>
+          <span class="dot" onclick="goToSlide(1)"></span>
+          <span class="dot" onclick="goToSlide(2)"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Life. Личный блог.</p>
+  </footer>
+
+  <script src="js/game.js"></script>
+</body>
+</html>
