@@ -8,8 +8,15 @@
 </head>
 <body>
   <header>
-    <h1>My Life</h1>
-    <nav>
+    <div class="header-top">
+      <h1>My Life</h1>
+      <button class="burger" id="burgerBtn" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <nav id="navMenu">
       <ul class="menu">
         <li><a href="index.html">Главная</a></li>
         <li><a href="interests.html">Мои интересы</a></li>
@@ -26,17 +33,19 @@
     </section>
 
     <section class="favorite-block">
-        <img src="images/favorite.jpg" alt="Мой пёс Тедди" class="favorite-img">
-        <div class="favorite-text">
-         <h3>Мой пёс Тедди</h3>
-          <p>Тедди — мой самый близкий друг и главный источник хорошего настроения. Он встречает меня каждый день, когда я возвращаюсь домой, и делает даже самый обычный день ярче.</p>
-          <p>Я выбрал его, потому что животные учат заботе, терпению и искренней привязанности. Тедди — часть моей семьи и моего блога, поэтому эта страница посвящена именно ему.</p>
-        </div>
+      <img src="images/favorite.jpg" alt="Мой пёс Тедди" class="favorite-img">
+      <div class="favorite-text">
+        <h3>Мой пёс Тедди</h3>
+        <p>Тедди — мой самый близкий друг и главный источник хорошего настроения. Он встречает меня каждый день, когда я возвращаюсь домой, и делает даже самый обычный день ярче.</p>
+        <p>Я выбрал его, потому что животные учат заботе, терпению и искренней привязанности. Тедди — часть моей семьи и моего блога, поэтому эта страница посвящена именно ему.</p>
+      </div>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 My Life. Личный блог.</p>
   </footer>
+
+  <script src="js/game.js"></script>
 </body>
 </html>

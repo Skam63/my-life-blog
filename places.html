@@ -8,8 +8,15 @@
 </head>
 <body>
   <header>
-    <h1>My Life</h1>
-    <nav>
+    <div class="header-top">
+      <h1>My Life</h1>
+      <button class="burger" id="burgerBtn" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <nav id="navMenu">
       <ul class="menu">
         <li><a href="index.html">Главная</a></li>
         <li><a href="interests.html">Мои интересы</a></li>
@@ -31,17 +38,17 @@
         <article class="card">
           <img src="images/place1.jpg" alt="Концерт">
           <h3>Концерт ATL</h3>
-          <p>Живое выступление с мощной атмосферой, светом и энергией толпы. После таких событий ещё долго ходишь под впечатлением.</p>
+          <p>Живое выступление с мощной атмосферой, светом и энергией толпы.</p>
         </article>
         <article class="card">
           <img src="images/place2.jpg" alt="Игровая выставка">
           <h3>Игровая выставка</h3>
-          <p>Место, где можно увидеть новые игры, попробовать демо-версии и познакомиться с другими игроками. Атмосфера, заряжающая на новые идеи.</p>
+          <p>Место, где можно увидеть новые игры, попробовать демо-версии и познакомиться с другими игроками.</p>
         </article>
         <article class="card">
           <img src="images/place3.jpg" alt="Заброшенные места">
           <h3>Заброшенные места</h3>
-          <p>Прогулки по заброшенным зданиям и атмосферным локациям. Напоминает Зону из «Сталкера» — тихо, мрачно и по-своему красиво.</p>
+          <p>Прогулки по заброшенным зданиям и атмосферным локациям. Напоминает Зону из «Сталкера».</p>
         </article>
       </div>
     </section>
@@ -50,5 +57,7 @@
   <footer>
     <p>&copy; 2025 My Life. Личный блог.</p>
   </footer>
+
+  <script src="js/game.js"></script>
 </body>
 </html>

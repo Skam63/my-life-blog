@@ -8,8 +8,15 @@
 </head>
 <body>
   <header>
-    <h1>My Life</h1>
-    <nav>
+    <div class="header-top">
+      <h1>My Life</h1>
+      <button class="burger" id="burgerBtn" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <nav id="navMenu">
       <ul class="menu">
         <li><a href="index.html">Главная</a></li>
         <li><a href="interests.html" class="active">Мои интересы</a></li>
@@ -31,7 +38,7 @@
         <article class="card">
           <img src="images/interest1.jpg" alt="Игры">
           <h3>Игры</h3>
-          <p>Больше всего люблю GTA V — за открытый мир, свободу действий и живой Лос-Сантос. А ещё играю в RPG и инди-проекты, чтобы отдыхать и находить новые идеи.</p>
+          <p>Больше всего люблю GTA V — за открытый мир, свободу действий и живой Лос-Сантос. А ещё играю в RPG и инди-проекты.</p>
           <a href="https://store.steampowered.com/" target="_blank" rel="noopener">Steam</a>
         </article>
         <article class="card">
@@ -53,5 +60,7 @@
   <footer>
     <p>&copy; 2025 My Life. Личный блог.</p>
   </footer>
+
+  <script src="js/game.js"></script>
 </body>
 </html>

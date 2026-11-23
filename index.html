@@ -10,7 +10,6 @@
   <header>
     <div class="header-top">
       <h1>My Life</h1>
-      <!--Кнопка бургер-->
       <button class="burger" id="burgerBtn" onclick="toggleMenu()">
         <span></span>
         <span></span>
@@ -18,7 +17,6 @@
       </button>
     </div>
     
-    <!--Само меню-->
     <nav id="navMenu">
       <ul class="menu">
         <li><a href="index.html" class="active">Главная</a></li>
@@ -74,6 +72,20 @@
           <span class="dot" onclick="goToSlide(2)"></span>
         </div>
       </div>
+    </section>
+
+    <!-- Игра -->
+    <section class="game-box">
+      <h2>Мини-игра: Угадай число</h2>
+      <p>Компьютер загадал число от 1 до 10. Сможете угадать?</p>
+      
+      <div class="game-controls">
+        <input type="number" id="guessInput" placeholder="Число..." min="1" max="10">
+        <button onclick="checkGuess()">Проверить</button>
+        <button onclick="resetGame()">Заново</button>
+      </div>
+      
+      <p id="gameMessage">Введите ваше первое предположение!</p>
     </section>
   </main>
 
