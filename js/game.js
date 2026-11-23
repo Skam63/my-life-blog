@@ -28,3 +28,12 @@ function goToSlide(index) {
 if (slides.length) {
   setInterval(nextSlide, 5000);
 }
+// ====== МЕНЮ-БУРГЕР ДЛЯ МОБИЛЬНЫХ ======
+function toggleMenu() {
+  const nav = document.getElementById('navMenu');
+  const burger = document.getElementById('burgerBtn');
+  
+  //меню и анимации кнопки
+  nav.classList.toggle('open');
+  burger.classList.toggle('active');
+}
